@@ -37,7 +37,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4>All Posts</h4>
+                                <h4>All Users</h4>
                             </div>
                             <div class="card-body">
 
@@ -61,6 +61,7 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Phone</th>
+                                            <th>Position</th>
                                             <th>Created At</th>
                                             <th>Action</th>
                                         </tr>
@@ -74,6 +75,9 @@
                                                 </td>
                                                 <td>
                                                     {{ $user->phone }}
+                                                </td>
+                                                 <td>
+                                                    {{ $user->position }}
                                                 </td>
                                                 <td>{{ $user->created_at }}</td>
                                                 <td>

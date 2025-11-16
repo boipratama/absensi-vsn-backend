@@ -1,10 +1,19 @@
-@if ($message = Session::get('success'))
-    <div class="alert alert-success alert-dismissible show fade">
-        <div class="alert-body">
-            <button class="close" data-dismiss="alert">
-                <span>×</span>
-            </button>
-            <p>{{ $message }}</p>
-        </div>
-    </div>
+@if (Session::has('success'))
+    <script>
+        Swal.fire({
+            title: 'Berhasil!',
+            text: '{{ Session::get('success') }}',
+            icon: 'success'
+        });
+    </script>
+@endif
+
+@if (Session::has('error'))
+    <script>
+        Swal.fire({
+            title: 'Gagal!',
+            text: '{{ Session::get('error') }}',
+            icon: 'error'
+        });
+    </script>
 @endif
