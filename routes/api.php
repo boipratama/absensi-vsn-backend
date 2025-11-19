@@ -11,3 +11,5 @@ Route::get('/user', function (Request $request) {
 Route::post('/login', [App\Http\Controllers\API\AuthController::class, 'login']);
 //logout route
 Route::post('/logout', [App\Http\Controllers\API\AuthController::class, 'logout'])->middleware('auth:sanctum');
+//company route
+Route::get('/company', [App\Http\Controllers\API\CompanyController::class, 'show'])->middleware('auth:sanctum');

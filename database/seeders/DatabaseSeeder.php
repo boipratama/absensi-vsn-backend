@@ -21,5 +21,17 @@ class DatabaseSeeder extends Seeder
             'email' => 'boypratama@mail.com',
             'password' => Hash::make('12345678'),
         ]);
+
+        // Data Dummy Company
+        \App\Models\Company::create([
+            'name' => 'PT. Visionet Data Internasional',
+            'email' => 'vidia@visionet.co.id',
+            'address' => 'Jl. Pak Kasih, Gang Merak 3 No.77, Kel. Mariana, Pontianak',
+            'latitude' => '-0.0200938',
+            'longitude' => '109.3309565',
+            'radius_km' => '30',
+            'time_in' => '08:00:00',
+            'time_out' => '17:00:00',
+        ]);
     }
 }

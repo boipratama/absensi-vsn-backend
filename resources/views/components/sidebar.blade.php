@@ -11,10 +11,13 @@
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
-
             <li class="nav-item dropdown ">
                 <a href="{{ route('users.index') }}"
                     class="nav-link"><i class="fas fa-columns"></i><span>Users</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+                <a href="{{ route('companies.show', 1) }}"
+                    class="nav-link"><i class="fas fa-columns"></i><span>Company</span></a>
             </li>
         </ul>
     </aside>
