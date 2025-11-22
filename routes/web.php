@@ -4,6 +4,8 @@ use App\Http\Controllers\CompanyController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AttendaceController;
+use App\Http\Controllers\PermissionController;
 
 Route::get('/', function () {
     return view('pages.auth.auth-login');
@@ -16,5 +18,6 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('users', UserController::class);
     Route::resource('companies', CompanyController::class);
-    Route::resource('attendances', App\Http\Controllers\AttendaceController::class);
+    Route::resource('attendances',AttendaceController::class);
+    Route::resource('permissions', PermissionController::class);
 });

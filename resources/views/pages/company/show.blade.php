@@ -1,16 +1,15 @@
 @extends('layouts.app')
-
 @section('title', 'Profile')
-
+{{--
 @push('style')
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="{{ asset('library/summernote/dist/summernote-bs4.css') }}">
     <link rel="stylesheet" href="{{ asset('library/bootstrap-social/assets/css/bootstrap.css') }}">
-@endpush
-
+@endpush --}}
 @section('main')
     <div class="main-content">
         <section class="section">
+            @include('layouts.alert')
             <div class="section-header">
                 <h1>Profile Perusahaan</h1>
                 <div class="section-header-breadcrumb">
@@ -85,6 +84,5 @@
 @push('scripts')
     <!-- JS Libraries -->
     <script src="{{ asset('library/summernote/dist/summernote-bs4.js') }}"></script>
-
     <!-- Page Specific JS File -->
 @endpush

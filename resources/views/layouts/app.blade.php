@@ -40,8 +40,6 @@
     </script>
     <!-- END GA -->
 </head>
-</head>
-
 <body>
     <div id="app">
         <div class="main-wrapper">
